@@ -14,14 +14,15 @@ import {
 export class TitleComponent implements OnInit, OnChanges {
   @Input() nome: string = '';
   constructor() {
-    console.log(`Construtor ${this.nome}`);
+    // console.log(`Construtor ${this.nome}`);
   }
-
+  //muda o conteúdo depois de iniciado
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(`OnChanges ${this.nome}`);
+    // console.log(`OnChanges ${this.nome}`);
   }
+  // Inicia o conteúdo
   ngOnInit(): void {
     this.nome = this.nome + ' x';
-    console.log(`OnInit ${this.nome}`);
+    // console.log(`OnInit ${this.nome}`);
   }
 }
